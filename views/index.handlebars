@@ -1,11 +1,14 @@
-<h1>Burgers!</h1>
-
-<h2>Eat Da Burgers!</h2>
+<div class = transbox>
+<h1>Eat Da Burgers!</h1>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{id}}{{burger_name}}
+      {{id}}   {{burger_name}}
+        <button class="change-devoured" data-id="{{id}}" data-newDevoured="{{devoured}}">
+       Devour!
+         </button>
+         <br>
     {{/unless}}
   {{/each}}
 </ul>
@@ -15,7 +18,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{id}}{{burger_name}}
+      {{id}}   {{burger_name}}
     {{/if}}
   {{/each}}
 </ul>
@@ -36,3 +39,5 @@
 -->
   <button type="submit">Add Burger</button>
 </form>
+
+</div>

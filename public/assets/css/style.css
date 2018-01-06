@@ -1,5 +1,9 @@
-
-
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCnK2sF2ER5MiIw8GJRmDPssng__a7m-aTnsd-EXzOllZKYeo");
+	text-align: center;
+	font-weight: bold;
+    color: #000000;
+}
 li {
   padding: 5px;
   margin: 5px;
@@ -10,12 +14,20 @@ li {
   font-weight: bold;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
-
 .form-group {
   margin-bottom: 5px;
 }
+
+.transbox {
+  margin: 130px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+button {
+	margin-bottom: 5px;
+}
+
+

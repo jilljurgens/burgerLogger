@@ -6,6 +6,7 @@ $(function() {
 	var newDevouredState = {
 		devoured: newDevoured
 	};
+//	I want to say that devoured = true
 
 	$.ajax("/api/burgers/" + id, {
 		type: "PUT",
