@@ -14,16 +14,16 @@ router.get("/", function(req, res) {
 
 router.post("/api/burgers", function(req, res) {
     burger.insertOne([
-    	"burger_name", "devoured"
+    	"burger_name"
     	], [
-    	req.body.name, req.body.devoured
+    	req.body.name
     	], function(result) {
-    		res.json({ id: result.insertId });
+    		res.redirect("/");
     	});
 });
-router.get("/api/burgers", function(req, res) {
-    res.send("hello");
-});
+// router.get("/api/burgers", function(req, res) {
+//     res.send("hello");
+// });
 
 
 // router.put("/api/burgers/:id", function(req, res) {
