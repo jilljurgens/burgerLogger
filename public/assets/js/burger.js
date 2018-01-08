@@ -1,11 +1,12 @@
 $(function() {
   $(".change-devoured").on("click", function(event) {
     var id = $(this).data("id");
-    var newDevoured = $(this).data("newDevoured");
+    var newDevoured = 1;
 
 	var newDevouredState = {
 		devoured: newDevoured
 	};
+	console.log(newDevoured);
 //	I want to say that devoured = true
 
 	$.ajax("/api/burgers/" + id, {
@@ -14,7 +15,7 @@ $(function() {
 		}).then(function() {
 			console.log("changed devoured to ", newDevoured);
 			location.reload();
-			}
+		}
 	);
   });
 
