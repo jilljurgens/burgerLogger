@@ -9,6 +9,18 @@ li {
   margin: 5px;
   background: #faebd7;
 }
+.readyToEat {
+  float: left;
+}
+
+.alreadyEaten {
+  float: right;
+}
+
+.clearfix {
+    clear: both;
+    overflow: auto;
+}
 
 .label {
   font-weight: bold;
@@ -20,6 +32,7 @@ li {
 
 .transbox {
   margin: 130px;
+  padding: 40px;
   background-color: #ffffff;
   border: 1px solid black;
   opacity: 0.8;

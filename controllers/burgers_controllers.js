@@ -22,14 +22,7 @@ router.post("/api/burgers", function(req, res) {
     	});
 });
 
-
-// router.get("/api/burgers", function(req, res) {
-//     res.send("hello");
-// });
-
-
 router.put("/api/burgers/:id", function(req, res) {
-    //  res.send("hello");
 	var condition = "id = " + req.params.id;
 
 	console.log("condition", condition);

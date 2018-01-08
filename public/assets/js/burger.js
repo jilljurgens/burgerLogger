@@ -7,7 +7,7 @@ $(function() {
 		devoured: newDevoured
 	};
 	console.log(newDevoured);
-//	I want to say that devoured = true
+
 
 	$.ajax("/api/burgers/" + id, {
 		type: "PUT",
@@ -34,7 +34,7 @@ $(function() {
 				console.log("created new burger");
 				location.reload();
 			}
-		);
+	);
   });
 });    	
 
